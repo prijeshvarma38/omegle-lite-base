@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, Arial, sans-serif; background: #0b1220; color: #e8ecf1; }
+.wrap { max-width: 900px; margin: 0 auto; padding: 16px; }
+h2 { margin: 6px 0 12px; }
+
+.controls { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; }
+button { padding: 10px 14px; border-radius: 10px; border: 1px solid #2a3b57; background: #101a2d; color: #e8ecf1; cursor: pointer; }
+button:hover { filter: brightness(1.1); }
+
+#status { margin-left: 8px; opacity: .8; }
+
+.messages { height: 340px; overflow-y: auto; background: #0a111f; border: 1px solid #1f2d44; border-radius: 12px; padding: 12px; }
+.msg { margin: 8px 0; line-height: 1.4; }
+.msg .who { font-weight: 600; margin-right: 6px; }
+
+.inputRow { display: flex; gap: 8px; margin-top: 12px; }
+.inputRow input { flex: 1; padding: 10px; border-radius: 10px; border: 1px solid #2a3b57; background: #0f1726; color: #e8ecf1; }
