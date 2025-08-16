@@ -1,31 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <title>Omegle Lite (Base)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
+  <title>Omegle Lite</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrap">
-    <h2>Omegle Lite (Base)</h2>
 
-    <div class="controls">
-      <button id="btnStart">Start</button>
-      <button id="btnNext">Next</button>
-      <button id="btnLeave">Leave</button>
-      <span id="status"></span>
-    </div>
+<h2>Omegle Lite</h2>
 
-    <div id="messages" class="messages"></div>
+<input id="nickname" placeholder="Enter nickname">
+<button id="btnSetName">Set Nickname</button>
 
-    <div class="inputRow">
-      <input id="input" placeholder="Type a message..." />
-      <button id="send">Send</button>
-    </div>
-  </div>
+<br>
+<button id="btnStart">Start Chat</button>
+<button id="btnNext">Next</button>
+<button id="btnLeave">Leave</button>
 
-  <script src="/socket.io/socket.io.js"></script>
-  <script src="client.js"></script>
+<div id="status"></div>
+<div id="messages"></div>
+<input id="input" placeholder="Type a message">
+<button id="send">Send</button>
+<div id="typingStatus"></div>
+
+<button id="btnAddFriend">Add Friend</button>
+<h3>Friends</h3>
+<ul id="friendsList"></ul>
+
+<div class="video-chat">
+  <video id="localVideo" autoplay muted></video>
+  <video id="remoteVideo" autoplay></video>
+  <button id="btnStartVideo">Start Video</button>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
 </body>
 </html>

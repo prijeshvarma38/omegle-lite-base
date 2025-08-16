@@ -8,7 +8,17 @@
   },
   "license": "MIT",
   "dependencies": {
-    "express": "^4.19.2",
-    "socket.io": "^4.7.5"
-  }
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prijeshvarma38/omegle-lite-base.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/prijeshvarma38/omegle-lite-base/issues"
+  },
+  "homepage": "https://github.com/prijeshvarma38/omegle-lite-base#readme"
 }
